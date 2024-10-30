@@ -2,7 +2,10 @@ package RecursionCodes;
 
 public class LinearSearch {
     private static int search(int[] arr, int index, int key){
-        if(arr[index]== key){
+        if(index == arr.length){// if key is not present then return -1
+            return -1;
+        }
+        if(arr[index]== key){// if key is not present then return index
             return index;
         }
 
