@@ -1,3 +1,4 @@
+//Method-1: Logical Approach
 class Solution {
     public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
         //storing length of both array
@@ -23,5 +24,12 @@ class Solution {
         } 
         //else return false
         return false;
+    }
+}
+//Method-2: Using String Join
+
+class Solution {
+    public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
+        return (String.join("", word1)).equals(String.join("", word2));
     }
 }
